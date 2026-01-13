@@ -30,6 +30,24 @@ main{
     border-radius: 8px;
 }
 
+.btn-a{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+    margin-left: -40px;
+}
+
+.years{
+color: rgba(255, 255, 255, 1);
+display: block;
+font-family: Work Sans;
+font-style: Bold;
+font-size: 4.0625rem;
+font-weight: 700;
+
+text-align: center;
+}
+
 /* Navbar start */
 .display-flex{
     display: flex;
@@ -49,7 +67,8 @@ main{
 .brand{
 color: rgba(19, 19, 19, 1);
 
-font-size: 45px;
+font-size: 2.8125rem;
+
 font-weight: 700px;
 text-align: center;
 }
@@ -68,7 +87,7 @@ text-align: center;
 .nav-link{
     text-decoration: none;
     color:rgba(66, 66, 66, 1);
-font-size: 18px;
+font-size: 1rem;
 font-weight: 500px;
 
 }
@@ -90,14 +109,14 @@ font-weight: 500px;
 
 .banner-title{
 color:rgba(19, 19, 19, 1);
-font-size: 64px;
+font-size: 4rem;
 font-weight: 700px;
 text-align: center;
 }
 .banner-content p{
 color:rgba(114, 114, 114, 1);
 font-style: Regular;
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
 line-height: 26px;
 text-align: center;
@@ -126,7 +145,7 @@ margin: 15px 0px 15px 0px ;
    
 }
 .our-features, .som-title, h2{
-font-size: 45px;
+font-size: 2.8125rem;
 font-weight: 400px;
 text-align: left;
 }
@@ -144,7 +163,7 @@ text-align: left;
 
 .our-features .description, p{
 color:rgba(114, 114, 114, 1);
-font-size: 16px;
+font-size: 1rem;
 text-align: left;
 margin: 15px  0px 20px 0px ;
 }
@@ -152,7 +171,7 @@ margin: 15px  0px 20px 0px ;
 .description{
 width: 542px;
 color:rgba(114, 114, 114, 1);
-font-size: 16px;
+font-size: 1rem;
 text-align: left;
 margin: 15px  0px 20px 0px ;}
 
@@ -200,15 +219,19 @@ text-align: center;
 
 
 
-/* Sponspors-info */
-.Our-Sponspors{
   
 
     
-}
+
 
 .Sponspors-info{
-   
+
+    flex-direction: column;
+    width: 542px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+   margin-bottom: 15px;
 
 
     
@@ -220,7 +243,7 @@ color: rgba(19, 19, 19, 1);
 
 
 font-style: Bold;
-font-size: 45px;
+font-size: 2.8125rem;
 font-weight: 700px;
 line-height: 53px;
 letter-spacing: 0%;
@@ -233,7 +256,7 @@ color:rgba(114, 114, 114, 1);
 
 font-family: Work Sans;
 font-style: Regular;
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400px;
 line-height: 26px;
 letter-spacing: 0%;
@@ -249,12 +272,65 @@ text-align: center;
 
 }
 
+/* Features you will love & enjoy */
+.features-wrapper{
+    display: flex;
+    
+    gap: 100px;
+    align-items: center;
+}
+
+.features-header h2{
+color:rgba(19, 19, 19, 1);
+border-left: 5px solid #FAA515;
+padding-left: 21px;
+font-family: Work Sans;
+font-style: Bold;
+font-size: 2.8125rem;
+font-weight: 700;
+line-height: 53px;
+letter-spacing: 0%;
+text-align: left;
+width: 468px;
+}
+
+.features-header p{
+color:  rgba(114, 114, 114, 1);
+font-family: Work Sans;
+font-style: Regular;
+font-size: 1rem;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+width: 586px;
+}
+.feature-item{
+    margin-bottom: 24px;
+    padding: 30px;
+    width: 586px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 1);
+}
+
+.features-media img {
+    width: 100%;
+}
+
+.feature-item{
+    width: 100%;
+}
+
+
 
 /* responsive section  */
 @media screen and (max-width: 576px) {
-
+*{
+    margin: 0px auto;
+}
   /* shared */
-  .display-flex {
+  .display-flex, .features-wrapper {
     flex-direction: column;
   }
 
@@ -313,6 +389,21 @@ text-align: center;
     padding: 0 16px;
   }
 
+.btn-a{
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+.features-header p{
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+}
+.feature-item{
+    width: 400px;
+    margin: 0px auto;
+}
+
   /* FACTS */
   .Facts {
     text-align: center;
@@ -355,6 +446,9 @@ text-align: center;
     justify-items: center;
   }
 }
+
+
+
 
 
 /* medium size device */
